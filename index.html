@@ -1,224 +1,128 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Notas - Painel</title>
-  <script src="https://cloud.tinymce.com/5/tinymce.min.js?apiKey=lo08zr0yshbackc989ktg3hhp2chtjt0q0xp6ooz0rc6mf06"></script>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Notas -  crie notas para poder acessá-las facilmente em qualquer lugar.</title>
 </head>
-<body class="bg-teal-darken-1">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-orange-lighten-2">
-  <div class="container">
-  <a class="navbar-brand" href="#">
-    <img src="img/logo.png" alt="">
-  </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-  <ul class="navbar-nav mr-auto">
-    <li class="nav-item active">
-      <a class="nav-link text-active" href="#"><i class="fas fa-home"></i> Página inicial <span class="sr-only">(current)</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#"><i class="fas fa-compass"></i> Explorar</a>
-    </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-bell"></i> Notificações
-        </a>
-        <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item text-center"> <i class="fas fa-comment-dots"></i> </li>
-              </ul>
-        </div>
-      </li>
-  </ul>
-
-  <ul class="navbar-nav ml-auto">
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-        aria-haspopup="true" aria-expanded="false">
-        Minha conta
-      </a>
-      <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">Matheus Teixeira</a>
-        <a class="dropdown-item" href="#">Configurações</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#"><i class="fas fa-power-off"></i> Sair</a>
-      </div>
-    </li>
-    <!--
-    <div class="form-inline float-right">
-        <button class="btn btn-orange-darken-4 mx-3 rounded-pill" type="submit" data-toggle="modal" data-target="#criar"><i class="far fa-sticky-note"></i> Criar</button>
-      </div>
-      -->
-  </ul>
-</div>
-</div>
-</nav>
-
-<main class="container mt-3">
-    <div class="row">
-      <!--NAVBAR-->
-      <div class="col-lg-3 bg-light mb-3 rounded pb-3">
-        <div class="index-header text-center mt-3">
-          <img src="https://scontent.fsdu12-1.fna.fbcdn.net/v/t1.0-9/47682151_1413287602142168_5335863684021354496_n.jpg?_nc_cat=111&_nc_ht=scontent.fsdu12-1.fna&oh=82733665dbfdefb62fc322503967e9e9&oe=5CF8B170" class="img-fluid rounded-circle w-50">
-          <p class="mt-2">Matheus Teixeira</p>
-        </div>
-        <div class="index-body">
-          <div class="index-details">
-            <ul class="list-group">
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Notas publicadas
-                  <span class="badge badge-primary badge-pill">14</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Seguidores
-                  <span class="badge badge-primary badge-pill">2</span>
-                </li>
-                <li class="list-group-item d-flex justify-content-between align-items-center">
-                  Seguindo
-                  <span class="badge badge-primary badge-pill">1</span>
-                </li>
-              </ul>
-            </div>
-            <hr>
-            <div class="list-group">
-              <a href="#" class="list-group-item list-group-item-action active">
-                  <i class="fas fa-star"></i> Favoritos
-              </a>
-              <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
-              <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
-              <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
-              <a href="#" class="list-group-item list-group-item-action disabled" tabindex="-1" aria-disabled="true">Vestibulum at
-                eros</a>
+<body class="container bg-orange-lighten-5 py-3">
+    <main class="row align-items-center">
+        <div class="col-lg-6 text-center">
+            <img src="img/notas-logo-250x157.png" alt="" class="img-fluid">
+            <div class="text-muted my-3">
+                Crie notas para poder acessá-las facilmente em qualquer lugar.
             </div>
         </div>
-      </div>
-      <!--MAIN-->
-      <div class="ml-1"></div>
-      <div class="col-lg-5 bg-light rounded mb-3 pb-3">
-        <div class="mt-3">
-            <button class="btn btn-blue btn-block btn-lg rounded-pill"  data-toggle="modal" data-target="#newNota">Escreva uma nova nota</button>
-
-<!-- Modal -->
-<div class="modal fade bd-example-modal-lg" id="newNota" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Escreva uma nova nota</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true"><i class="fas fa-times-circle"></i></span>
-        </button>
-      </div>
-      <form action="" method="post">
-      <div class="modal-body">
-        <div class="form-group">
-          <input type="text" name="nota-title" id="nota-title" class="form-control" placeholder="Qual será o titulo dessa nova nota?">
-        </div>
-        <div class="form-group">
-            <textarea class="form-control" name="nota-body" id="nota-body" rows="3"></textarea>
-        </div>
-        <fieldset class="form-group">
-            <div class="row">
-              <legend class="col-form-label col-sm-2 pt-0">Privacidade</legend>
-              <div class="col-sm-10">
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="nota-privacy" id="nota-privacy" value="1" checked>
-                  <label class="form-check-label" for="nota-privacy">
-                      <i class="fas fa-unlock"></i> Publico
-                  </label>
+        <div class="col-lg-6">
+            <div class="card mt-5 shadow shadow-lg rounded-0">
+                <h1 class="display-1 card-img-top text-center pt-5 text-color22"> <i class="fas fa-user"></i></h1>
+                <div class="card-body">
+                    <form action="painel.html" method="post">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" class="form-control" aria-describedby="helpId">
+                            <small id="helpId" class="text-muted">Informe o e-mail registrado em seu cadastro.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="senha">Senha</label>
+                            <input type="password" name="senha" id="senha" class="form-control">
+                            <small id="helpId" class="text-muted"><a href="" data-toggle="modal" data-target="#exampleModalCenter">Esqueci
+                                    minha senha</a></small>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" name="" id="" class="btn btn-red-darken-1 btn-block">Login</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="nota-privacy" id="nota-privacy" value="0">
-                  <label class="form-check-label" for="nota-privacy">
-                      <i class="fas fa-lock"></i> Privado
-                  </label>
+                <div class="card-footer">
+                    <p class="text-left"><a href="" data-toggle="modal" data-target="#exampleModal">Não sou cadastrado</a></p>
                 </div>
-              </div>
             </div>
-          </fieldset>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-        <button type="button" class="btn btn-primary">Publicar</button>
-      </div>
-    </form>
-    </div>
-  </div>
-</div>
         </div>
-        <hr>
-        <div class="row pl-2 pr-3">
-            <div class="list-group">
-                <a href="#" class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small>3 days ago</small>
-                  </div>
-                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small class="text-muted">3 days ago</small>
-                  </div>
-                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                  <small class="text-muted">Donec id elit non mi porta.</small>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">List group item heading</h5>
-                    <small class="text-muted">3 days ago</small>
-                  </div>
-                  <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                </a>
-              </div>
+
+        <!-- Novo cadastro -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-green text-light">
+                        <h5 class="modal-title" id="exampleModalLabel">Cadastrar-se</h5>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times-circle" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <form action="" method="post">
+                        <div class="modal-body bg-green-lighten-5">
+                            <div class="form-group">
+                                <label for="nome">Seu nome</label>
+                                <input type="text" name="nome" id="nome" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nasc">Data de nascimento</label>
+                                <input type="date" name="nasc" id="nasc" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="form-control" aria-describedby="helpId"
+                                    required>
+                                <small id="helpId" class="text-muted">Não se preocupe, nós nunca iremos compartilhar o
+                                    seu e-mail com mais ninguém.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="senha">Senha</label>
+                                <input type="password" name="senha" id="senha" class="form-control" required>
+                            </div>
+                        </div>
+                        <div class="modal-footer bg-green-lighten-4">
+                            <button type="button" class="btn btn-red-darken-4" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-green-darken-4">Finalizar cadastro</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="mr-1"></div>
-      <!--AMIGOS-->
-      <div class="col-lg-3 bg-light rounded pb-3">
-        <div class="friends-last mt-3">
-          <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h6 class="mb-1">List group item heading</h6>
-              </div>
-              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-              <small>Silas Sena - 07/02/2019</small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h6 class="mb-1">Maecenas sed diam eget</h6>
-              </div>
-              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-              <small class="text-muted">Vera Lucia - 05/02/2019</small>
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <div class="d-flex w-100 justify-content-between">
-                <h6 class="mb-1">List group item heading</h6>
-              </div>
-              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-              <small class="text-muted">Carla dos Santos - 31/01/2019</small>
-            </a>
-          </div>
+
+        <!-- Esqueci minha senha -->
+        <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header bg-orange text-light"">
+          <h5 class=" modal-title id="exampleModalCenterTitle">Esqueci
+                        minha senha</h5>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                            <i class="fas fa-times-circle" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <form action="" method="post">
+                        <div class="modal-body bg-orange-lighten-5">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" class="form-control" aria-describedby="helpId"
+                                    required>
+                                <small id="helpId" class="text-muted">Informe o e-mail registrado em seu cadastro.</small>
+                            </div>
+                        </div>
+                        <div class="modal-footer bg-orange-lighten-4">
+                            <button type="button" class="btn btn-red-darken-4" data-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-green-darken-4">Recuperar senha</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-    </div>
+        </div>
+
     </main>
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
 
-<script src="js/jquery.js"></script>
-<script src="js/popper.js"></script>
-<script src="js/bootstrap.js"></script>
-<script>
-  tinymce.init({ selector:'textarea' });
-</script>
 </body>
+
 </html>
